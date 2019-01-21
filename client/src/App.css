@@ -1,7 +1,6 @@
 .App {
 display: flex;
 justify-content: center;
-
 }
 
 .Title {
@@ -9,10 +8,20 @@ display: flex;
 justify-content: center;
 border: 2px solid black;
 height: 40px;
-color: white;
-background: rgb(0, 135, 72);
+color: black;
+background: rgb(212, 255, 0);
 font-size: 30px;
 font-family: 'Baloo Thambi', cursive;
 }
 
+
+.main {
+    background-color:rgb(79, 70, 70);
+    height: 1000px;
+}
+
+.List {
+    color: rgb(212, 255, 0);
+    font-size: 50px;
+}
 

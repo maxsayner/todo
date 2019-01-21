@@ -29,23 +29,30 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="Title">
-          Simple Todo List
+
+        <div className="main">
+
+          <div className="Title">
+            Simple To Do List
         </div>
-        <br />
-        <br />
 
-        <form className="App" onSubmit={this.onSubmit}>
+          <br />
+          <br />
+
+          <form className="App" onSubmit={this.onSubmit}>
 
 
-          <input type="text" placeholder="Enter an item:" input value={this.state.term} onChange={this.onChange} />
-          <button>Submit</button>
+            <input type="text" placeholder="Enter an item:" input value={this.state.term} onChange={this.onChange} />
+            <button>Submit</button>
+          </form>
 
-        </form>
+          <div className="List">
+            <List items={this.state.items} />
+          </div>
+        </div>
+      </div>
 
-        <List items={this.state.items} />
 
-      </div >
     );
   }
 }
